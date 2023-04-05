@@ -1,1 +1,35 @@
-<p>create-empleados works!</p>
+<div class="container pt-4">
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <div class="card text-center">
+                <div class="card-body">
+                    <h3>Agregar Empleado</h3>
+                    <form class="mt-4">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" placeholder="Nombre:">
+                            </div>
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" placeholder="Apellido:">
+                            </div>
+                            <div class="col-md-12 mt-2">
+                                <input type="text" class="form-control" placeholder="Documento:">
+                            </div>
+                            <div class="col-md-12 mt-2">
+                                <input type="text" class="form-control" placeholder="Salario:">
+                            </div>
+                            <footer class="row mt-4">
+                                <div class="col-md-6">
+                                    <button type="button" [routerLink]="['/list-empleados']" routerLinkActive="router-link-active"  class="btn btn-secondary">Volver</button>
+                                </div>
+                                <div class="col-md-6">
+                                    <button type="submit" class="btn btn-dark">Agregar</button>
+                                </div>
+                            </footer>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
